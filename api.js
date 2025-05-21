@@ -27,9 +27,9 @@ courses.forEach(course=>
     <ol class="text-left list-inside list-decimal">
  ${course.features.map(feature=>`<li>${feature}</li>`).join('')}
     </ol>
-    <p><li>${course.features}</li></p>
-    <hr class="1px solid to-black">
-    <p class="text-bold">${course.name}</p>
+   
+    <hr class="border-t border-gray-500 w-full my-6">
+    <p class="font-bold">${course.name}</p>
      <p>${course.published_in}</p>
     <div class="card-actions">
       <button class="btn btn-primary">Buy Now</button>
