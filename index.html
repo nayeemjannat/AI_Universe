@@ -7,6 +7,13 @@
     <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awasome -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+/>
+
+
 </head>
 <body>
     <header>
@@ -16,12 +23,32 @@
         </div>
     </header>
     <main>
+        <!--main section  -->
 <div id="course-container">
 
 </div>
+
+<!-- modal -->
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
     </main>
     <footer>
-
+ <div class="flex justify-center mt-4">
+            <button class="btn btn-secondary rounded-lg">Sort By Date</button>
+        </div>
     </footer>
     <script src="./api.js"></script>
 </body>

@@ -22,18 +22,38 @@ courses.forEach(course=>
       alt="course"
       class="rounded-xl" />
   </figure>
-  <div class="card-body items-start text-center">
+  <div class="card-body text-left">
     <h2 class="card-title">Features</h2>
     <ol class="text-left list-inside list-decimal">
  ${course.features.map(feature=>`<li>${feature}</li>`).join('')}
     </ol>
    
-    <hr class="border-t border-gray-500 w-full my-6">
-    <p class="font-bold">${course.name}</p>
-     <p>${course.published_in}</p>
-    <div class="card-actions">
-      <button class="btn btn-primary">Buy Now</button>
+    
+<div class="flex justify-between items-center border-t pt-4 px-4 w-full max-w-md mx-auto">
+  <!-- Left Side -->
+  <div>
+    <h2 class="font-bold text-lg">ChatGPT</h2>
+    <div class="flex items-center text-sm text-gray-600 mt-1">
+      <p>
+  <i class="fa-solid fa-calendar-days mr-2 text-gray-600"></i>
+  11/01/2022
+</p>
+
     </div>
+  </div>
+
+  <!-- Right Side -->
+  <div class="bg-red-100 rounded-full p-3">                                  
+   <button  onclick="my_modal_1.showModal()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+   </button>
+
+   
+  </div>
+</div>
+
   </div>
   `
 //append child
